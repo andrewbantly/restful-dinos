@@ -1,0 +1,10 @@
+<%- include("../partials/header.ejs") %>
+<h2>Here are the prehistoric creatures!</h2>
+<ul>
+    <%creatures.forEach((creature, i) => {%>
+        <li><a href="/prehistoric_creatures/<%=i%>">
+            <%=creature.type%>
+        </a></li>
+        <%})%>
+</ul>
+<%- include("../partials/footer.ejs") %>
